@@ -1,29 +1,16 @@
-<div class="comment">
-    <textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
-    <input type="submit" value="Post" onclick="insert()" style="width:20px;" /></form>
-    </div>
-    <div id="display"></div>
-    <script type="text/javascript">
-    var titles = [];
-    var titleInput = document.getElementById("title");
-    var messageBox = document.getElementById("display");
-    function Allow()
-    {
-    if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
-    {
-    user.title.value="";
-    alert("Please Enter only alphabets");
-    }
-    window.location.reload()
-    }
-    function insert () {
-    titles.push(titleInput.value);
-    clearAndShow();
-    }
-    function clearAndShow ()
-    {
-    titleInput.value = "";
-    messageBox.innerHTML = "";
-    messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
-    }
-    </script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dark Purple
+        </title>
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Dark Purple Website" property="og:title" />
+        <meta content="Website for the gaming community Dark Purple." property="og:description" />
+        <meta content="https://xannyxu.github.io/darkpurple/" property="og:url" />
+        <meta content="https://xannyxu.github.io/hangoutzone/hangoutzone.png" property="og:image" />
+        <meta content="#0D1C47" data-react-helmet="true" name="theme-color" />
+    </head>
+</html>
